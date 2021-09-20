@@ -1,0 +1,14 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.vsoft.quizapp">
+    <!-- Flutter needs it to communicate with the running application
+         to allow setting breakpoints, to provide hot reload, etc.
+    -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+</manifest>
+
+<intent-filter>
+       <action android:name="android.intent.action.VIEW"/>
+       <category android:name="android.intent.category.DEFAULT"/>
+       <category android:name="android.intent.category.BROWSABLE"/>
+       <data android:host="https://learndy.page.link" android:scheme="https"/>
+</intent-filter>
